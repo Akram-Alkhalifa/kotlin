@@ -1,16 +1,16 @@
-fun main() {
-  var number:Int = readln().toInt()
-  var copyNum:Int = number
-    var sum: Int = 0
-    while(number != 0) {
-        var d:Int = number % 10
-        sum = sum*10 + d
-        number /= 10
+fun main () {
+    var m=HashMap<Int, String>()
+    m.put(77,"ck")
+    m.put(20,"r")
+    m.put(93,"ak")
+    m.put(48,"g")
+    m.put(101,"e")
+    var res = m.toList().sortedBy {( k , v) -> v }.toMap()
+    for (i in res){
+        println("key ${i.key}   value ${i.value}")
     }
-    println(sum)
-    if(copyNum == sum){ // 1991
-        println("palindrome")
-    }else{
-        println("not palindrome")
-    }
-  }
+    println("****************\n")
+    res.forEach { println("key ${it.key}   value ${it.value}") }
+}
+
+

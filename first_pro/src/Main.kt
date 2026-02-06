@@ -316,3 +316,265 @@ fun main() {
 }*/
 
 
+
+/*fun main() {
+    var x:Int = readln().toInt()
+    var fact: Int = factorial(x)
+    var res: Boolean = even(fact)
+    println(" fact $x = $fact  $res")
+
+}
+
+fun factorial(n:Int): Int{
+    var fac:Int = 1
+    for(i in 1 .. n){
+        fac*=i
+    }
+    return fac
+}
+
+fun even(n:Int): Boolean{
+    return (n % 2 == 0)
+}*/
+
+
+/*
+fun main( ) {
+    println(add(n2 = 6))
+}
+
+
+fun add (n1:Int = 5 , n2:Int ):Int {
+    return n1 + n2
+}*/
+
+
+/*
+
+fun main( ) {
+    println(sum(1,1,2,4,87))
+}
+
+fun sum ( vararg nums:Int ): Int{
+    var s =0
+    for(i in 0 until nums.size ){
+        s+=nums[i]
+    }
+    return s
+}*/
+
+
+
+/*
+fun main( ) {
+    println(plus(6))
+}
+var plus:(Int) -> Int = { n:Int -> n +5 }
+*/
+
+
+/*
+fun main() { //lambda
+    println(p1(6))
+    println(p2(6))
+    println(p3(6))
+    println(p4(6))
+    println(p5(6))
+    // lmabda
+}
+var p1: (Int) -> Int ={n:Int -> n * 10}
+var p2: (Int) -> Int = {n -> n * 10}
+var p3: (Int) -> Int = {it -> it * 10}
+var p4: (Int) -> Int = { it * 10}
+var p5 ={n: Int -> n * 10}
+
+*/
+
+/*
+fun main(){
+    println(5.calc(2))
+    println(5 calc 3)
+}
+infix fun Int.calc (n:Int)=this * n
+*/
+
+
+/*
+fun main() {
+    var r1=sum(3,5,{mul(2,5)})
+    var r2=sum(3,5){mul(2,5)}
+    println("r1=$r1")
+    println("r2=$r2")
+    println(fPrint({sayHi()}))
+}
+var sayHi : () -> Unit = {println("Hi")}
+var mul : (Int, Int) -> Int = {n1 , n2 -> n1 * n2 }
+fun sum (n:Int , m:Int , f:()-> Int) : Int {
+    return n + m + f()
+}
+fun fPrint (f:()->Unit): Unit {
+    f()
+    println("pr")
+}
+
+*/
+
+
+/*
+fun main(){
+    var nums = arrayOf(1,2,3,4,5)
+    var sum =0
+    for(i in 0 until nums.size){
+        sum += nums[i]
+    }
+    print(sum)
+}*/
+
+/*
+fun main(){
+    var nums = arrayOf(1,-2,3,4,-5 ,0 ,8,-1,0)
+    var pos =0
+    var neg =0
+    var zero =0
+    for(i in 0 until nums.size){
+
+        if (nums[i] > 0) pos++ else if (nums[i] < 0) neg++ else zero++
+    }
+    println("pos: $pos, neg: $neg, zero: $zero")
+}*/
+
+
+/*
+fun main(){
+    var nums = arrayOf(1,-2,3,4,-5 ,0 ,8,-1,0)
+    var even =0
+    var odd =0
+    for(i in 0 until nums.size){
+
+        if (nums[i] % 2 == 0) even++ else odd++
+    }
+    println("even: $even, odd: $odd")
+}*/
+
+
+/*
+fun main(){
+    var nums = arrayOf(1,-2,3,4,-5 ,0 ,8,-1,0)
+    var min =nums[0]
+    for(i in 1 until nums.size){
+        if (nums[i] < min){
+            min = nums[i]
+        }
+    }
+    println( "min : ${min} " )
+}*/
+
+
+/*
+fun main() {
+    var nums = Array(5){
+        readln().toInt()
+    }
+    for(i in 0 until nums.size){
+        print(" array is : ${nums[i] }")
+    }
+}*/
+
+
+/*
+fun main (){
+    var l =Array(5 ) {
+        readln().toInt()
+    }
+    var avg = getAverage(l)
+    println(avg)
+}
+fun getAverage (nums:Array<Int>):Int{
+    var sum = 0
+    for(num in nums){
+        sum += num
+    }
+    return sum / nums.size
+}*/
+
+
+/*
+fun main (){
+    var list = intArrayOf(1,2,3,4,5)
+    list.forEach { println(it) }
+}*/
+
+/*
+fun main (){
+    var list = intArrayOf(1,-2,3,4,-5,7)
+    list.forEach { get(it) }
+}
+fun get (n: Int){
+
+    if(n > 0) println(" $n pos  ") else println("$n neg ")
+}*/
+
+/*
+fun main (){
+   var l1=listOf<String>("akram","ahmad","mohamed","hasan","eid","fizh","gufrin","hysem")
+    println(l1.filter{it.contains("a")})
+    println(l1.filterNot{it.contains("a")})
+    println(l1.get(2))
+    println(l1.find{it.contains("akram")})
+    var l2=l1.plus("akram").plus("mohaued")
+    println(l2)
+}*/
+
+/*
+fun main () {
+    var l1 = listOf("akram", "ahmad", "mohamed", "hasan", "eid", "fizh", "gufrin", "hysem")
+    var l2 = listOf("akram", "ahmad", "mohamed", "hasan", "eid", "fizh", "gufrin", "hysem")
+    var lists = listOf(l1,l2)
+    println(lists)
+    println(lists.flatten())
+
+}*/
+
+/*
+fun main () {
+    var l1 =mutableListOf("akram", "ahmad", "mohamed", "hasan", "eid", "fizh", "gufrin", "hysem")
+    l1[1]="abdo"
+    println(l1)
+}*/
+
+/*
+fun main () {
+    var l = mutableSetOf(1,2,3,1,2,3,5,5,7,9,8)
+    println(l.sorted())
+}*/
+
+
+/*
+fun main () {
+    var m1=mapOf("010" to "akram", "015" to "mohmed")
+    var m2=mapOf(25 to "akram", 30 to "mohmed")
+   m1.forEach { println(it) }
+   m2.forEach { println(it) }
+    println(m1.keys)
+    println(m2.values)
+    println(m1["010"])
+    println(m2[30])
+}
+*/
+
+
+/*fun main () {
+    var m=HashMap<Int, String>()
+    m.put(77,"ck")
+    m.put(20,"r")
+    m.put(93,"ak")
+    m.put(48,"g")
+    m.put(101,"e")
+    var res = m.toList().sortedBy {( k , v) -> v }.toMap()
+    for (i in res){
+        println("key ${i.key}   value ${i.value}")
+    }
+    println("****************\n")
+    res.forEach { println("key ${it.key}   value ${it.value}") }
+}*/
+
