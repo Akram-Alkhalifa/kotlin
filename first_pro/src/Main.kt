@@ -578,3 +578,50 @@ fun main () {
     res.forEach { println("key ${it.key}   value ${it.value}") }
 }*/
 
+
+
+/*
+fun main () {
+    var st1=student(1,"ak",27)
+    st1.printData()
+    var st2 :student = student(2,"mohamed")
+    st2.printData()
+    var st3 :student = student(2,"abdo",31)
+    st2.printData()
+}
+class student(var id: Int ,var name: String, var age: Int) {
+    init {
+        println("This New Student is created")
+    }
+    constructor( id : Int , name: String):this (id , name,  0){
+        println("This is an Engineer ")
+    }
+    fun printData() {
+        println("$id  $name  $age")
+    }
+}
+
+*/
+
+
+/*
+fun main () {
+    var st1=student(1,"ak",27)
+    st1.univer="Enginerring"
+    st1.printData()
+}
+class student(var id: Int ,var name: String, var age: Int) {
+    var email:String=""
+    get() = "$name@gmail.com"
+
+    var univer :String=""
+        set(value) {
+            field= "$value Al Sham university"
+        }
+
+    fun printData() {
+        println("$id  $name  $age  $email  $univer")
+    }
+}
+
+*/
