@@ -205,3 +205,48 @@ fun areAngrams(firstInput: String , secondInput: String): Boolean{
 
 
 
+/*
+import java.util.UUID
+fun main() {
+    val b1 = BankAccount("Ak")
+    b1.deposit(10000)
+    b1.withdraw(2000)
+    b1.deposit(10)
+    println(b1.transferMoney())
+    println(b1.getBalance())
+}
+
+class BankAccount(val name:String){
+    val accountid: UUID = UUID.randomUUID()
+    private  var balance =0
+    private  var transactions: MutableList<Int> =mutableListOf()
+
+
+
+    fun deposit(amount: Int) {
+        balance += amount
+        transactions.add(amount)
+    }
+
+    fun withdraw(amount: Int):Boolean {
+        if(amount <= balance){
+            balance -= amount
+            transactions.add(-amount)
+            return true
+        }else{
+            return false
+        }
+    }
+
+    fun getBalance():Int{
+        return balance
+    }
+    fun transferMoney() {
+        println()
+        println("Your transactions is $transactions")
+        balance = transactions.sum()
+        println("Your Balance is = $balance")
+    }
+}
+
+*/
